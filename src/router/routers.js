@@ -33,7 +33,7 @@ export default [
     redirect: '/home',
     component: Main,
     meta: {
-      hideInMenu: true,
+      hideInMenu: false,
       notCache: true
     },
     children: [
@@ -41,7 +41,7 @@ export default [
         path: '/home',
         name: 'home',
         meta: {
-          hideInMenu: true,
+          hideInMenu: false,
           title: '首页',
           notCache: true,
           icon: 'md-home'
@@ -58,45 +58,6 @@ export default [
       href: 'https://lison16.github.io/iview-admin-doc/#/',
       icon: 'ios-book'
     }
-  },
-  {
-    path: '/join',
-    name: 'join',
-    component: Main,
-    meta: {
-      hideInBread: true
-    },
-    children: [
-      {
-        path: 'join_page',
-        name: 'join_page',
-        meta: {
-          icon: '_qq',
-          title: 'QQ群'
-        },
-        component: () => import('@/view/join-page.vue')
-      }
-    ]
-  },
-  {
-    path: '/message',
-    name: 'message',
-    component: Main,
-    meta: {
-      hideInBread: true,
-      hideInMenu: true
-    },
-    children: [
-      {
-        path: 'message_page',
-        name: 'message_page',
-        meta: {
-          icon: 'md-notifications',
-          title: '消息中心'
-        },
-        component: () => import('@/view/single-page/message/index.vue')
-      }
-    ]
   },
   {
     path: '/components',
