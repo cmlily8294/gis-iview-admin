@@ -44,6 +44,7 @@ export default [
           hideInMenu: false,
           title: '首页',
           notCache: true,
+          mapContent: true,
           icon: 'md-home'
         },
         component: () => import('@/view/single-page/home')

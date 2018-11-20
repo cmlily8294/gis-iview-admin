@@ -23,7 +23,7 @@
           <div class="tag-nav-wrapper">
             <tags-nav :value="$route" @input="handleClick" :list="tagNavList" @on-close="handleCloseTag"/>
           </div>
-          <Content class="content-wrapper">
+          <Content v-bind:class="[$route.meta && $route.meta.mapContent ? 'map-content-wrapper' : 'content-wrapper']">
             <keep-alive :include="cacheList">
               <router-view/>
             </keep-alive>

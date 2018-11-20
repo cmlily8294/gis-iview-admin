@@ -1,5 +1,11 @@
+<style lang="less">
+  .ol-map{
+    height: 100%;
+  }
+</style>
+
 <template>
-  <div id="ol-map">
+  <div id="ol-map" class="ol-map">
 
   </div>
 </template>
@@ -10,7 +16,6 @@ import View from 'ol/View'
 import TileLayer from 'ol/layer/Tile'
 import {OSM, TileArcGISRest} from 'ol/source'
 import ZoomSlider from 'ol/control/ZoomSlider'
-import './home.module.less'
 import 'ol/ol.css'
 export default {
   name: 'home',
